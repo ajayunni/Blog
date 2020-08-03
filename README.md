@@ -11,6 +11,7 @@ This is a website that I'm still working on as a side project to learn  **full s
   - Comment on the posts.
   - Delete and edit comments.
   - Reply to comments.
+  - Changing background.
   - Main page has a list of posts with each having a *profile picture* of author,*title* of post,*date* of publishing, *thumbnail* (if any), opening sentences of the posts and a *like* button.
   - Responsive mobile layout.
 
