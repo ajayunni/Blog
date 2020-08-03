@@ -14,6 +14,15 @@ This is a website that I'm still working on as a side project to learn  **full s
   - Changing background.
   - Main page has a list of posts with each having a *profile picture* of author,*title* of post,*date* of publishing, *thumbnail* (if any), opening sentences of the posts and a *like* button.
   - Responsive mobile layout.
+### Front End
+- HTML5/CSS3.
+- JavaScript and JQuery.
+- Bootstrap4 and mdbootstrap.
+### Back End
+- Node.js.
+- Express.js.
+- MongoDB and Mongoose.
+- passport.js for Authentication.
 
 **This website is constantly under development and I intent to make this website bigger and better overtime**
 
