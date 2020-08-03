@@ -18,5 +18,5 @@ This is a website that I'm still working on as a side project to learn  **full s
 
 # Sneek Peak!
 
-![image path broken](https://github.com/ajayunni/Blog/tree/master/pics/imag1.png?raw=true "Main Page")
-![image path broken](https://github.com/ajayunni/Blog/tree/master/pics/imag2.png?raw=true "Blog Post")
+![image path broken](https://github.com/ajayunni/Blog/blob/master/pics/imag1.png?raw=true "Main Page")
+![image path broken](https://github.com/ajayunni/Blog/blob/master/pics/imag2.png "Blog Post")
