@@ -1,0 +1,32 @@
+h1{
+	font-family: 'Notable', sans-serif;
+	text-align:center;
+	color:gold;
+}
+body{
+	color:gold;
+}
+#cardGroup{
+	background:peachpuff;
+}
+.btn:hover {
+  box-shadow: 0 12px 24px silver;
+}
+.card{
+	margin-bottom:10px;
+	height:30rem;
+	background:black;
+}
+body{
+	display:flex;
+	flex-direction:column;
+}
+.container{
+	justify-content:center;
+	display:flex;
+	flex-direction:column;
+}
+.row{
+	justify-content: space-between;
+	display:flex;
+}

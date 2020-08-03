@@ -1,0 +1,78 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" type="text/css" href="/stylesheet/blog.css">
+<div class="allTheContent">
+		<div id="heading" class="d-flex justify-content-center">
+		<h1>
+			Welcome to my Blog!
+			<%if(currentUser){%>
+				<span>, </span><%=currentUser.username%>		
+			<%}%>
+		</h1>
+	</div>
+	<%if(success&&success.length>0){%>
+		<div class="container">
+			<div class="alert alert-success" role="alert">
+			  <%=success%>
+			</div>
+		</div>
+	<%}%>
+	<%if(error&&error.length>0){%>
+		<div class="container">
+			<div class="alert alert-danger" role="alert">
+			  <%=error%>
+			</div>
+		</div>
+	<%}%>
+
+	<div class ="d-flex justify-content-center">
+		<a class="btn btn-outline-warning" href="/new">Add a new post</a>
+	</div>
+
+
+
+	<div class="row">	
+		<% blog.forEach(function(post){ %>
+		  <div class="col-lg-4 col-sm-6" >
+			<div class="card promoting-card">
+			  <div class="card-body d-flex flex-row">
+				<img src=<%=post.profilePic%> class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+				<div>
+				  <h4 class="card-title font-weight-bold mb-2"><%= post.title %></h4>
+				  <p class="card-text" id="date"><i class="far fa-clock pr-2"></i><%= post.created.toDateString() %></p>
+				</div>
+			  </div>
+			  <div class="view zoom">
+				<%var image = post.image;%>
+				<%if(image.length==0){%>
+					<%image = "https://c4.wallpaperflare.com/wallpaper/654/555/787/geometry-cyberspace-digital-art-lines-wallpaper-preview.jpg";%>
+				<%}%>
+				<div class="view zoom">
+					<img class="zoom card-img-top rounded-0" src="<%=image%>" alt="Card image cap">
+				  </div>
+				<a href="#!">
+				  <div class="mask rgba-white-slight"></div>
+				</a>
+			  </div>
+			  <div class="card-body">
+				<div class="collapse-content"></div>
+				  <p class="card-text content"><%= post.body.substring(0,200) %>...<span><a id="readMore" href="/blogs/<%= post._id %>">Read more</a></span></p>
+				  <form action="/blogs/<%=post._id%>/likes" method="POST">
+					<button type="submit float-right p-1 my-1 mr-3" style="background:none; color:green;border: none;">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					  </button>
+				  </form>
+				</div>
+			  </div>
+			</div>
+		<% }); %>	
+</div>
+
+</div>
+<ul class="slideshow">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<%- include("partials/footer.ejs") %>

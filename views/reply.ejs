@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" type="text/css" href="/stylesheet/new.css">
+<div class="container">
+	<h3 class="display-2">Reply</h3>
+		<form action="/blogs/<%=postId%>/comments/<%=commentId%>/reply?_method=PUT" method="POST">
+		  <div class="form-group" style="margin-top:1rem;">
+			<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="reply here...
+" name="comment[comment]"rows="3"></textarea>
+		  </div>
+		  <input type="submit" class="btn btn-primary btn-lg btn-block">
+		</form>
+	</div>
+<%- include("partials/footer.ejs") %>

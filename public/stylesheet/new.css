@@ -1,0 +1,13 @@
+body{
+	background:skyblue;
+	text-align: center;
+}
+.container{
+	margin:4rem auto;
+}
+form{
+	margin-top:3rem;
+}
+h3{
+	color:black;
+}

@@ -1,0 +1,16 @@
+<%- include("../partials/header.ejs") %>
+<link rel="stylesheet" type="text/css" href="/stylesheet/new.css">
+<div class="container d-flex justify-content-center">
+	<h3 class="display-2">Add a new comment!</h3>
+</div>
+<div class="container">
+	<form action="/blogs/<%= id %>/comments" method="POST">
+	   <input class="form-control form-control-lg" name="comment[author]" type="text" placeholder="Your name" style="margin-top:1rem;">
+	  <div class="form-group" style="margin-top:1rem;">
+		<label for="exampleFormControlTextarea1" >Comment</label>
+		<textarea name="comment[comment]" class="form-control" id="exampleFormControlTextarea1" placeholder="start typing here..." rows="3"></textarea>
+	  </div>
+	  <input type="submit" class="btn btn-primary btn-lg btn-block">
+	</form>
+</div>
+<%- include("../partials/footer.ejs") %>

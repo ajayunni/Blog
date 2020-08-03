@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" type="text/css" href="/stylesheet/new.css">
+<div class="container d-flex justify-content-center">
+	<h3 class="display-2"><%= post.title %></h3>
+</div>
+<div class="container">
+	<form action="/blogs/<%= post._id %>?_method=PUT" method="POST">
+	   <input class="form-control form-control-lg" name="blog[title]" type="text" value="<%= post.title %>" style="margin-top:1rem;">
+		<input class="form-control" type="text" name="blog[image]" value="<%= post.image %>" style="margin-top:1rem;">
+	  <div class="form-group" style="margin-top:1rem;">
+		<label for="exampleFormControlTextarea1" >Content</label>
+		<textarea name="blog[body]" class="form-control" id="exampleFormControlTextarea1" name="blog[body]"rows="3"><%= post.body %></textarea>
+	  </div>
+	  <input type="submit" class="btn btn-primary btn-lg btn-block">
+	</form>
+</div>
+<%- include("partials/footer.ejs") %>
