@@ -24,6 +24,8 @@ This is a website that I'm still working on as a side project to learn  **full s
 - MongoDB and Mongoose.
 - passport.js for Authentication.
 
+*For development, deployment and testing, [Goorm IDE](https://ide.goorm.io/) is used.*
+
 **This website is constantly under development and I intent to make this website bigger and better overtime**
 
 # Sneek Peak!
